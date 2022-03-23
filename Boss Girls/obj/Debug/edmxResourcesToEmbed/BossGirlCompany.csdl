@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BossGirlsCompanyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Buy_Perm_Product">
+    <Key>
+      <PropertyRef Name="Prod_ID" />
+    </Key>
+    <Property Name="Buy_ID" Type="Int32" Nullable="false" />
+    <Property Name="Prod_ID" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Buy_Permission" Relationship="Self.FK_Buy_Perm_Product_Buy_Permission" FromRole="Buy_Perm_Product" ToRole="Buy_Permission" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_Buy_Perm_Product_Products" FromRole="Buy_Perm_Product" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Buy_Permission">
+    <Key>
+      <PropertyRef Name="Buy_ID" />
+    </Key>
+    <Property Name="Buy_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Name="Store_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Buy_Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Client_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Buy_Perm_Product" Relationship="Self.FK_Buy_Perm_Product_Buy_Permission" FromRole="Buy_Permission" ToRole="Buy_Perm_Product" />
+    <NavigationProperty Name="Client" Relationship="Self.FK_Buy_Permission_Clients" FromRole="Buy_Permission" ToRole="Clients" />
+    <NavigationProperty Name="Store" Relationship="Self.FK_Buy_Permission_Stores" FromRole="Buy_Permission" ToRole="Stores" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="Client_ID" />
+    </Key>
+    <Property Name="Client_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Client_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Client_Phone" Type="Int64" Nullable="false" />
+    <Property Name="Client_Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Client_Fax" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Client_Account" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Buy_Permission" Relationship="Self.FK_Buy_Permission_Clients" FromRole="Clients" ToRole="Buy_Permission" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="Emp_ID" />
+    </Key>
+    <Property Name="Emp_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Emp_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Emp_Phone" Type="Int32" Nullable="false" />
+    <Property Name="Emp_Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Emp_Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Stores" Relationship="Self.FK_Stores_Employee1" FromRole="Employee" ToRole="Stores" />
+  </EntityType>
+  <EntityType Name="Product_Store">
+    <Key>
+      <PropertyRef Name="Store_Name" />
+      <PropertyRef Name="Prod_ID" />
+    </Key>
+    <Property Name="Store_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Prod_ID" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_Product_Store_Products" FromRole="Product_Store" ToRole="Products" />
+    <NavigationProperty Name="Store" Relationship="Self.FK_Product_Store_Stores" FromRole="Product_Store" ToRole="Stores" />
+  </EntityType>
+  <EntityType Name="Product_Unit">
+    <Key>
+      <PropertyRef Name="Prod_ID" />
+      <PropertyRef Name="UNIT" />
+    </Key>
+    <Property Name="Prod_ID" Type="Int32" Nullable="false" />
+    <Property Name="UNIT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_Product_Unit_Products" FromRole="Product_Unit" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Prod_ID" />
+    </Key>
+    <Property Name="Prod_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Prod_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Buy_Perm_Product" Relationship="Self.FK_Buy_Perm_Product_Products" FromRole="Products" ToRole="Buy_Perm_Product" />
+    <NavigationProperty Name="Product_Store" Relationship="Self.FK_Product_Store_Products" FromRole="Products" ToRole="Product_Store" />
+    <NavigationProperty Name="Product_Unit" Relationship="Self.FK_Product_Unit_Products" FromRole="Products" ToRole="Product_Unit" />
+    <NavigationProperty Name="Supply_Perm_Product" Relationship="Self.FK_Supply_Perm_Product_Products" FromRole="Products" ToRole="Supply_Perm_Product" />
+  </EntityType>
+  <EntityType Name="Store">
+    <Key>
+      <PropertyRef Name="Store_Name" />
+    </Key>
+    <Property Name="Store_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Store_Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Manager_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Buy_Permission" Relationship="Self.FK_Buy_Permission_Stores" FromRole="Stores" ToRole="Buy_Permission" />
+    <NavigationProperty Name="Employee" Relationship="Self.FK_Stores_Employee1" FromRole="Stores" ToRole="Employee" />
+    <NavigationProperty Name="Product_Store" Relationship="Self.FK_Product_Store_Stores" FromRole="Stores" ToRole="Product_Store" />
+    <NavigationProperty Name="Supply_Permission" Relationship="Self.FK_Supply_Permission_Stores1" FromRole="Stores" ToRole="Supply_Permission" />
+    <Property Name="Store_Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="Sup_ID" />
+    </Key>
+    <Property Name="Sup_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sup_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Sup_Phone" Type="Int64" Nullable="false" />
+    <Property Name="Sup_Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Sup_Fax" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sup_Account" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Supply_Permission" Relationship="Self.FK_Supply_Permission_Suppliers1" FromRole="Suppliers" ToRole="Supply_Permission" />
+  </EntityType>
+  <EntityType Name="Supply_Perm_Product">
+    <Key>
+      <PropertyRef Name="Sup_Perm_ID" />
+      <PropertyRef Name="Prod_ID" />
+    </Key>
+    <Property Name="Sup_Perm_ID" Type="Int32" Nullable="false" />
+    <Property Name="Prod_ID" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="Unit" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Production_Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Expire_Date" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_Supply_Perm_Product_Products" FromRole="Supply_Perm_Product" ToRole="Products" />
+    <NavigationProperty Name="Supply_Permission" Relationship="Self.FK_Supply_Perm_Product_Supply_Permission" FromRole="Supply_Perm_Product" ToRole="Supply_Permission" />
+  </EntityType>
+  <EntityType Name="Supply_Permission">
+    <Key>
+      <PropertyRef Name="Sup_Perm_ID" />
+    </Key>
+    <Property Name="Sup_Perm_ID" Type="Int32" Nullable="false" />
+    <Property Name="Store_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Sup_Perm_Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Sup_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Store" Relationship="Self.FK_Supply_Permission_Stores1" FromRole="Supply_Permission" ToRole="Stores" />
+    <NavigationProperty Name="Supplier" Relationship="Self.FK_Supply_Permission_Suppliers1" FromRole="Supply_Permission" ToRole="Suppliers" />
+    <NavigationProperty Name="Supply_Perm_Product" Relationship="Self.FK_Supply_Perm_Product_Supply_Permission" FromRole="Supply_Permission" ToRole="Supply_Perm_Product" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_Buy_Perm_Product_Buy_Permission">
+    <End Role="Buy_Permission" Type="Self.Buy_Permission" Multiplicity="1" />
+    <End Role="Buy_Perm_Product" Type="Self.Buy_Perm_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Buy_Permission">
+        <PropertyRef Name="Buy_ID" />
+      </Principal>
+      <Dependent Role="Buy_Perm_Product">
+        <PropertyRef Name="Buy_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Buy_Perm_Product_Products">
+    <End Role="Products" Type="Self.Product" Multiplicity="1" />
+    <End Role="Buy_Perm_Product" Type="Self.Buy_Perm_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Prod_ID" />
+      </Principal>
+      <Dependent Role="Buy_Perm_Product">
+        <PropertyRef Name="Prod_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Buy_Permission_Clients">
+    <End Role="Clients" Type="Self.Client" Multiplicity="1" />
+    <End Role="Buy_Permission" Type="Self.Buy_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clients">
+        <PropertyRef Name="Client_ID" />
+      </Principal>
+      <Dependent Role="Buy_Permission">
+        <PropertyRef Name="Client_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Buy_Permission_Stores">
+    <End Role="Stores" Type="Self.Store" Multiplicity="1" />
+    <End Role="Buy_Permission" Type="Self.Buy_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stores">
+        <PropertyRef Name="Store_Name" />
+      </Principal>
+      <Dependent Role="Buy_Permission">
+        <PropertyRef Name="Store_Name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Stores_Employee1">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+    <End Role="Stores" Type="Self.Store" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="Emp_ID" />
+      </Principal>
+      <Dependent Role="Stores">
+        <PropertyRef Name="Manager_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Store_Products">
+    <End Role="Products" Type="Self.Product" Multiplicity="1" />
+    <End Role="Product_Store" Type="Self.Product_Store" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Prod_ID" />
+      </Principal>
+      <Dependent Role="Product_Store">
+        <PropertyRef Name="Prod_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Store_Stores">
+    <End Role="Stores" Type="Self.Store" Multiplicity="1" />
+    <End Role="Product_Store" Type="Self.Product_Store" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stores">
+        <PropertyRef Name="Store_Name" />
+      </Principal>
+      <Dependent Role="Product_Store">
+        <PropertyRef Name="Store_Name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Unit_Products">
+    <End Role="Products" Type="Self.Product" Multiplicity="1" />
+    <End Role="Product_Unit" Type="Self.Product_Unit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Prod_ID" />
+      </Principal>
+      <Dependent Role="Product_Unit">
+        <PropertyRef Name="Prod_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supply_Perm_Product_Products">
+    <End Role="Products" Type="Self.Product" Multiplicity="1" />
+    <End Role="Supply_Perm_Product" Type="Self.Supply_Perm_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="Prod_ID" />
+      </Principal>
+      <Dependent Role="Supply_Perm_Product">
+        <PropertyRef Name="Prod_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supply_Permission_Stores1">
+    <End Role="Stores" Type="Self.Store" Multiplicity="1" />
+    <End Role="Supply_Permission" Type="Self.Supply_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stores">
+        <PropertyRef Name="Store_Name" />
+      </Principal>
+      <Dependent Role="Supply_Permission">
+        <PropertyRef Name="Store_Name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supply_Permission_Suppliers1">
+    <End Role="Suppliers" Type="Self.Supplier" Multiplicity="1" />
+    <End Role="Supply_Permission" Type="Self.Supply_Permission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suppliers">
+        <PropertyRef Name="Sup_ID" />
+      </Principal>
+      <Dependent Role="Supply_Permission">
+        <PropertyRef Name="Sup_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supply_Perm_Product_Supply_Permission">
+    <End Role="Supply_Permission" Type="Self.Supply_Permission" Multiplicity="1" />
+    <End Role="Supply_Perm_Product" Type="Self.Supply_Perm_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supply_Permission">
+        <PropertyRef Name="Sup_Perm_ID" />
+      </Principal>
+      <Dependent Role="Supply_Perm_Product">
+        <PropertyRef Name="Sup_Perm_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BossGirlsCompanyEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Buy_Perm_Product" EntityType="Self.Buy_Perm_Product" />
+    <EntitySet Name="Buy_Permission" EntityType="Self.Buy_Permission" />
+    <EntitySet Name="Clients" EntityType="Self.Client" />
+    <EntitySet Name="Employees" EntityType="Self.Employee" />
+    <EntitySet Name="Product_Store" EntityType="Self.Product_Store" />
+    <EntitySet Name="Product_Unit" EntityType="Self.Product_Unit" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="Stores" EntityType="Self.Store" />
+    <EntitySet Name="Suppliers" EntityType="Self.Supplier" />
+    <EntitySet Name="Supply_Perm_Product" EntityType="Self.Supply_Perm_Product" />
+    <EntitySet Name="Supply_Permission" EntityType="Self.Supply_Permission" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <AssociationSet Name="FK_Buy_Perm_Product_Buy_Permission" Association="Self.FK_Buy_Perm_Product_Buy_Permission">
+      <End Role="Buy_Permission" EntitySet="Buy_Permission" />
+      <End Role="Buy_Perm_Product" EntitySet="Buy_Perm_Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Buy_Perm_Product_Products" Association="Self.FK_Buy_Perm_Product_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Buy_Perm_Product" EntitySet="Buy_Perm_Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Buy_Permission_Clients" Association="Self.FK_Buy_Permission_Clients">
+      <End Role="Clients" EntitySet="Clients" />
+      <End Role="Buy_Permission" EntitySet="Buy_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Buy_Permission_Stores" Association="Self.FK_Buy_Permission_Stores">
+      <End Role="Stores" EntitySet="Stores" />
+      <End Role="Buy_Permission" EntitySet="Buy_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Stores_Employee1" Association="Self.FK_Stores_Employee1">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Stores" EntitySet="Stores" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Store_Products" Association="Self.FK_Product_Store_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Product_Store" EntitySet="Product_Store" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Store_Stores" Association="Self.FK_Product_Store_Stores">
+      <End Role="Stores" EntitySet="Stores" />
+      <End Role="Product_Store" EntitySet="Product_Store" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Unit_Products" Association="Self.FK_Product_Unit_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Product_Unit" EntitySet="Product_Unit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supply_Perm_Product_Products" Association="Self.FK_Supply_Perm_Product_Products">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="Supply_Perm_Product" EntitySet="Supply_Perm_Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supply_Permission_Stores1" Association="Self.FK_Supply_Permission_Stores1">
+      <End Role="Stores" EntitySet="Stores" />
+      <End Role="Supply_Permission" EntitySet="Supply_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supply_Permission_Suppliers1" Association="Self.FK_Supply_Permission_Suppliers1">
+      <End Role="Suppliers" EntitySet="Suppliers" />
+      <End Role="Supply_Permission" EntitySet="Supply_Permission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supply_Perm_Product_Supply_Permission" Association="Self.FK_Supply_Perm_Product_Supply_Permission">
+      <End Role="Supply_Permission" EntitySet="Supply_Permission" />
+      <End Role="Supply_Perm_Product" EntitySet="Supply_Perm_Product" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

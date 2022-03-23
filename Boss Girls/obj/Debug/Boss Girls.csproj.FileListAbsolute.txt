@@ -1,0 +1,121 @@
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\bin\Debug\Boss Girls.exe.config
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\bin\Debug\Boss Girls.exe
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\bin\Debug\Boss Girls.pdb
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\obj\Debug\Boss Girls.csproj.AssemblyReference.cache
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\obj\Debug\Boss_Girls.Home.resources
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\obj\Debug\Boss_Girls.Properties.Resources.resources
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\obj\Debug\Boss Girls.csproj.GenerateResource.cache
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\obj\Debug\Boss Girls.csproj.CoreCompileInputs.cache
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\obj\Debug\Boss Girls.exe
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\obj\Debug\Boss Girls.pdb
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\obj\Debug\Boss_Girls.UserLogin.resources
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\bin\Debug\EntityFramework.dll
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\bin\Debug\EntityFramework.SqlServer.dll
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\bin\Debug\EntityFramework.xml
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\bin\Debug\EntityFramework.SqlServer.xml
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\obj\Debug\Boss Girls.csproj.CopyComplete
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\obj\Debug\Boss_Girls.UserControls.resources
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\obj\Debug\Boss_Girls.BuyPermission.resources
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\obj\Debug\Boss_Girls.AdminControls.resources
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\obj\Debug\Boss_Girls.AdminLogin.resources
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\obj\Debug\Boss_Girls.Supply_Permission.resources
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\obj\Debug\Boss_Girls.Stores.resources
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\obj\Debug\Boss_Girls.Clients.resources
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\obj\Debug\Boss_Girls.Products.resources
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\obj\Debug\Boss_Girls.Supplier.resources
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\obj\Debug\Boss_Girls.supform.resources
+D:\00 PD ITI\Linq & EF\Project\Boss Girls\Boss Girls\obj\Debug\Boss_Girls.StoretostoreF.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\Boss Girls.exe.config
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\Boss Girls.exe
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\Boss Girls.pdb
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\EntityFramework.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\EntityFramework.SqlServer.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\EntityFramework.xml
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\EntityFramework.SqlServer.xml
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss Girls.csproj.AssemblyReference.cache
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.AdminControls.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.AdminLogin.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.BuyPermission.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.Clients.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.Home.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.Products.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.Properties.Resources.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.Stores.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.StoretostoreF.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.supform.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.Supplier.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.Supply_Permission.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.UserControls.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.UserLogin.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss Girls.csproj.GenerateResource.cache
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss Girls.csproj.CoreCompileInputs.cache
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss Girls.csproj.CopyComplete
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss Girls.exe
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss Girls.pdb
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.SelectReport.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.StoresReport.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\EnvDTE.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\stdole.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\Microsoft.MSXML.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.ProductsexpiryReport.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.ProductsinstoreTimeReport.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.ProductsReportF.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.TransactionsReport.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.ClientsData.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.SuppliersData.resources
+D:\00 PD ITI\Linq & EF\Project\F3\F3\Boss Girls\obj\Debug\Boss_Girls.Employees.resources

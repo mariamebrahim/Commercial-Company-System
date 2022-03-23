@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="60a15629a5fb4c7f82e43d716788a9fb" Name="Diagram1" ZoomLevel="94">
+        <EntityTypeShape EntityType="BossGirlsCompanyModel.Buy_Perm_Product" Width="1.5" PointX="7.5" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BossGirlsCompanyModel.Buy_Permission" Width="1.5" PointX="5.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BossGirlsCompanyModel.Client" Width="1.5" PointX="3" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BossGirlsCompanyModel.Employee" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BossGirlsCompanyModel.Product_Store" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BossGirlsCompanyModel.Product_Unit" Width="1.5" PointX="5.25" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BossGirlsCompanyModel.Product" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BossGirlsCompanyModel.Store" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BossGirlsCompanyModel.Supplier" Width="1.5" PointX="6" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BossGirlsCompanyModel.Supply_Perm_Product" Width="1.5" PointX="10.5" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BossGirlsCompanyModel.Supply_Permission" Width="1.5" PointX="8.25" PointY="4.625" IsExpanded="true" />
+        <AssociationConnector Association="BossGirlsCompanyModel.FK_Buy_Perm_Product_Buy_Permission" ManuallyRouted="false" />
+        <AssociationConnector Association="BossGirlsCompanyModel.FK_Buy_Perm_Product_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="BossGirlsCompanyModel.FK_Buy_Permission_Clients" ManuallyRouted="false" />
+        <AssociationConnector Association="BossGirlsCompanyModel.FK_Buy_Permission_Stores" ManuallyRouted="false" />
+        <AssociationConnector Association="BossGirlsCompanyModel.FK_Stores_Employee1" ManuallyRouted="false" />
+        <AssociationConnector Association="BossGirlsCompanyModel.FK_Product_Store_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="BossGirlsCompanyModel.FK_Product_Store_Stores" ManuallyRouted="false" />
+        <AssociationConnector Association="BossGirlsCompanyModel.FK_Product_Unit_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="BossGirlsCompanyModel.FK_Supply_Perm_Product_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="BossGirlsCompanyModel.FK_Supply_Permission_Stores1" ManuallyRouted="false" />
+        <AssociationConnector Association="BossGirlsCompanyModel.FK_Supply_Permission_Suppliers1" ManuallyRouted="false" />
+        <AssociationConnector Association="BossGirlsCompanyModel.FK_Supply_Perm_Product_Supply_Permission" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="BossGirlsCompanyModel.Store_to_store" Width="1.5" PointX="10.875" PointY="8.5" />
+        <EntityTypeShape EntityType="BossGirlsCompanyModel.sysdiagram" Width="1.5" PointX="10.375" PointY="0.75" />
+        <AssociationConnector Association="BossGirlsCompanyModel.FK_Store_to_store_Products" />
+        <AssociationConnector Association="BossGirlsCompanyModel.FK_Store_to_store_Stores" />
+        <AssociationConnector Association="BossGirlsCompanyModel.FK_Store_to_store_Stores1" />
+        <AssociationConnector Association="BossGirlsCompanyModel.FK_Store_to_store_Suppliers" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
